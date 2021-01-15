@@ -15,14 +15,16 @@
             <!--Форма серч-->
             <input class="search" type="search" placeholder="Поиск:">
             <ul class="top-nav-bar">
-                <li class="bookmark">Закладки</li>
-                <li class="basket">Корзина</li>
+                <li class="bookmark"><a class="bookmark-link" href="bookmark.html">Закладки</a></li>
+                <li class="basket"><a class="basket-link" href="basket.html">Корзина</a></li>
             </ul>
             <ul class="checkout">
-                <li class="checkout-link">Оформить заказ</li>
+                <li class="checkout-button"><a class="checkout-link" href="checkout.html">Оформить заказ</a></li>
             </ul>
         </nav>
-        <p class="site-description"><em>Интернет-магазин строительных материалов и инструментова для ремонта</em></p>
+        <div class="site-description">
+            <p><em>Интернет-магазин строительных материалов и инструментова для ремонта</em></p>
+        </div>
         <div class="header-contact-info">
             <span class="header-tel">+7 (812) 555-05-55</span>
             <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -47,23 +49,183 @@
         <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
         <section class="site-sections">
             <h2 class="visually-hidden">Разделы сайта</h2>
-            <ul class="site-sections-list">
+            <ul class="site-sections-list item-sections">
                 <li>
-                    <div class="section"></div>
+                    <div class="item-sections">
+                        <h3>Материалы</h3>
+                        <p>
+                            <a class="button" href="#">НА ЛЮБОЙ ВКУС</a>
+                        </p>
+                    </div>
                 </li>
                 <li>
-                    <div class="section"></div>
+                    <div class="item-sections"></div>
+                    <h3>Инструмент</h3>
+                        <p>
+                            <a class="button" href="#">НА ВСЕ СЛУЧАИ</a>
+                        </p>
                 </li>
                 <li>
-                    <div class="section"></div>
+                    <div class="item-sections"></div>
+                    <h3>Техника</h3>
+                        <p>
+                            <a class="button" href="#">ДЛЯ СТРОЙКИ</a>
+                        </p>
                 </li>
                 <li>
-                    <div class="section"></div>
+                    <div class="item-sections"></div>
+                    <h3>Скидки 50%</h3>
+                        <p>
+                            <a class="button" href="#">НА 350 ТОВАРОВ</a>
+                        </p>
                 </li>
                 <li>
-                    <div class="section"></div>
+                    <div class="item-sections"></div>
+                    <h3>Доставка</h3>
+                        <p>
+                            <a class="button" href="#">БЕСПЛАТНО</a>
+                        </p>
                 </li>
             </ul>
+        </section>
+        <section class="carosel slide">
+            <h2 class="visually-hidden">Каталог</h2>
+            <div class="carosel-inner">
+                <div class=" active item">
+                    <img src="img/drill.jpg" alt="Каталог дрели">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h2 class="catalog name">Дрели</h2>
+                            <p>Соседям на радость!</p>
+                            <a class="catalog-button" href="#" alt="Каталог">Отркыть каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-items">
+            <h2 class="popular-items-title">Популярные товары:</h2>
+            <a class="popular-items-button" href="#" alt="Все популярные товары">Все популярные товары</a>
+            <ul class="popular-items-list item-popular">
+                <li class="item-popular">
+                    <p>
+                        <a href="#">
+                            <img src="img/product" width="" height="" alt="BOSCH BFG 9000">
+                        </a>
+                    </p>
+                    <h3>
+                        <a href="#">
+                            <span class="item-popular-title">Перфоратор BOSCH BFG 9000</span>
+                        </a>
+                    </h3>
+                    <p>
+                        <span class="old-price"><del>32500 Р.</del></span>
+                    </p>
+                    <p>
+                        <span class="price">25500 Р.</span>
+                    </p>
+                </li>
+                <li class="item-popular">
+                    <p>
+                        <a href="#">
+                            <img src="img/product" width="" height="" alt="BOSCH BFG 3000">
+                        </a>
+                    </p>
+                    <h3>
+                        <a href="#">
+                            <span class="item-popular-title">Перфоратор BOSCH BFG 3000</span>
+                        </a>
+                    </h3>
+                    <p>
+                        <span class="old-price"><del>22500 Р.</del></span>
+                    </p>
+                    <p>
+                        <span class="price">15500 Р.</span>
+                    </p>
+                </li>
+                <li class="item-popular">
+                    <p>
+                        <a href="#">
+                            <img src="img/product" width="" height="" alt="BOSCH BFG 6000">
+                        </a>
+                    </p>
+                    <h3>
+                        <a href="#">
+                            <span class="item-popular-title">Перфоратор BOSCH BFG 6000</span>
+                        </a>
+                    </h3>
+                    <p>
+                        <span class="old-price"><del>30500 Р.</del></span>
+                    </p>
+                    <p>
+                        <span class="price">25500 Р.</span>
+                    </p>
+                </li>
+                <li class="item-popular">
+                    <p>
+                        <a href="#">
+                            <img src="img/product" width="" height="" alt="BOSCH BFG 9000">
+                        </a>
+                    </p>
+                    <h3>
+                        <a href="#">
+                            <span class="item-popular-title">Перфоратор BOSCH BFG 2000</span>
+                        </a>
+                    </h3>
+                    <p>
+                        <span class="price">12500 Р.</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="popular-companies">
+            <h2 class="popular-companies-title">Популярные производители:</h2>
+            <a class="popular-companies-button" href="#" alt="Все производители">Все производители</a>
+            <ul class="popular-companies-list company">
+                <li class="company">
+                    <a class="bosch" href="#" alt="bosch">
+                        <img src="" alt="bosch">
+                    </a>
+                </li>
+                <li class="company">
+                    <a class="makita" href="#" alt="makita">
+                        <img src="" alt="makita">
+                    </a>
+                </li>
+                <li class="company">
+                    <a class="dewalt" href="#" alt="dewalt">
+                        <img src="" alt="dewalt">
+                    </a>
+                </li>
+                <li class="company">
+                    <a class="interskol" href="#" alt="Интерскол">
+                        <img src="" alt="Интерскол">
+                    </a>
+                </li>
+                <li class="company">
+                    <a class="hitachi" href="#" alt="hitachi">
+                        <img src="" alt="hitachi">
+                    </a>
+                </li>
+                <li class="company">
+                    <a class="lg" href="#" alt="lg">
+                        <img src="" alt="lg">
+                    </a>
+                </li>
+                <li class="company">
+                    <a class="aeg" href="#" alt="aeg">
+                        <img src="" alt="aeg">
+                    </a>
+                </li>
+                <li class="company">
+                    <a class="metabo" href="#" alt="metabo">
+                        <img src="" alt="metabo">
+                    </a>
+                </li>
+            </ul>
+        <section class="services">
+            <h2>Сервисы</h2>
+            
         </section>
     </main>
 </body>
