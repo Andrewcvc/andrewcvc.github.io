@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title>Technomart</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,8 +12,9 @@
             <a class="main-header-logo">
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип інтернет-магазина Техномарт">
             </a>
-            <form action="sddsds.php" method="GET">
-                <input class="search" type="search" placeholder="Поиск:">
+            <form action="https://echo.htmlacademy.ru" method="GET">
+                <label for="search"></label>
+                <input id="search" type="search" name="Поиск" placeholder="Поиск:">
             </form>
             <ul class="top-nav-bar">
                 <li class="bookmark"><a class="bookmark-link" href="bookmark.html">Закладки: 0</a></li>
@@ -321,13 +322,24 @@
 
     <section class="modal modal-write-us">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <p>Введите имя:</p>
-        <!-- Здесь будет форма -->
-        <p>Ваш e-mail:</p>
-        <!-- Здесь будет форма -->
-        <p>Текст письма:</p>
-        <a class="button send-button">Отправить</a>
-        <span class="modal-close">x</span>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <p class="modal-name">
+                <label for="write-us-name">Ваше имя:</label>
+                <input id="write-us-name" type="text" name="Имя" placeholder="Представтесь, пожалуйста" required>
+            </p>
+            <p class="modal-email">
+                <label for="write-us-email">Ваш e-mail:</label>
+                <input id="write-us-email" type="email" name="Почта" placeholder="Для отправки ответа" required>
+            </p>
+            <p>
+                <label for="write-us-text">Текст письма:</label>
+            </p>
+            <p>
+                <textarea id="write-us-text" name="Письмо" placeholder="В свободной форме"></textarea>
+            </p>
+            <input type="submit">
+        </form>
+        <button class="modal-close" value="close">x</button>
     </section>
 
     <section class="modal modal-map">
