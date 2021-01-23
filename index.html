@@ -8,13 +8,13 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="top-navigation">
+        <nav class="top-navigation" aria-label="Навигация по сайту">
             <a class="main-header-logo">
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип інтернет-магазина Техномарт">
             </a>
-            <form action="https://echo.htmlacademy.ru" method="GET">
-                <label for="search"></label>
-                <input id="search" type="search" name="Поиск" placeholder="Поиск:">
+            <form action="/search" method="GET">
+                <label for="search" class="visually-hidden">Поиск</label>
+                <input id="search" type="search" name="Поиск" value="Найти" placeholder="Поиск:">
             </form>
             <ul class="top-nav-bar">
                 <li class="bookmark"><a class="bookmark-link" href="bookmark.html">Закладки: 0</a></li>
@@ -32,8 +32,12 @@
             <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <ul class="user-navigation">
-            <li><a class="login-button" href="login.html">Вход</a></li>
-            <li><a class="reg-button" href="login">Регистрация</a></li>
+            <li class="login-link">
+                <a class="login-link" href="login.html">Вход</a>
+            </li>
+            <li class="reg-link">
+                <a class="reg-link" href="login.html">Регистрация</a>
+            </li>
         </ul>
         <nav class="bottom-navigation">
             <ul class="site-navigation">
@@ -94,7 +98,11 @@
             <h2 class="visually-hidden">Каталог</h2>
             <div class="carosel-inner">
                 <div class=" active item">
-                    <img src="img/drill.jpg" alt="Каталог дрели">
+                    <figure class="slider-image">
+                        <img src="img/drill.jpg" alt="Каталог дрели">
+                    </figure>
+                    <button class="button slider-button slider-button-back" type="button">Назад</button>
+                    <button class="button slider-button slider-button-next" type="button">Вперед</button>
                     <div class="container">
                         <div class="carousel-caption">
                             <h2 class="catalog name">Дрели</h2>
@@ -185,42 +193,42 @@
             <a class="button popular-companies-button" href="#">Все производители</a>
             <ul class="popular-companies-list company">
                 <li class="company">
-                    <a class="bosch" href="#">
+                    <a class="bosch" href="#" aria-label="Компания bosch">
                         <img src="" alt="bosch">
                     </a>
                 </li>
                 <li class="company">
-                    <a class="makita" href="#">
+                    <a class="makita" href="#" aria-label="Компания makita">
                         <img src="" alt="makita">
                     </a>
                 </li>
                 <li class="company">
-                    <a class="dewalt" href="#">
+                    <a class="dewalt" href="#" aria-label="Компания dewalt">
                         <img src="" alt="dewalt">
                     </a>
                 </li>
                 <li class="company">
-                    <a class="interskol" href="#">
+                    <a class="interskol" href="#" aria-label="Компания Интерскол">
                         <img src="" alt="Интерскол">
                     </a>
                 </li>
                 <li class="company">
-                    <a class="hitachi" href="#">
+                    <a class="hitachi" href="#" aria-label="Компания hitachi">
                         <img src="" alt="hitachi">
                     </a>
                 </li>
                 <li class="company">
-                    <a class="lg" href="#">
+                    <a class="lg" href="#" aria-label="Компания lg">
                         <img src="" alt="lg">
                     </a>
                 </li>
                 <li class="company">
-                    <a class="aeg" href="#">
+                    <a class="aeg" href="#" aria-label="Компания aeg">
                         <img src="" alt="aeg">
                     </a>
                 </li>
                 <li class="company">
-                    <a class="metabo" href="#">
+                    <a class="metabo" href="#" aria-label="Компания metabo">
                         <img src="" alt="metabo">
                     </a>
                 </li>
@@ -255,7 +263,7 @@
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a class="button aboutcompany-button" href="#">Подробднее о компании</a>
+                <a class="button about-company-button" href="#">Подробднее о компании</a>
             </section>
             <section class="contacts">
                 <h2>Контакты</h2>
@@ -267,8 +275,8 @@
             </section>
     </main>
     <footer class="main-footer">
-        <section class="footer1">
-            <a class="main-header-logo">
+        <div class="footer1">
+            <a class="main-header-logo" aria-label="Логотип Техномарт">
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип інтернет-магазина Техномарт">
             </a>
             <p class="footer-contacts">
@@ -290,13 +298,13 @@
                     <li><a href="specialoffers.html">Спецпредложения</a></li>
                 </ul>
             </div>
-        </section>
-        <section class="footer2">
+        </div>
+        <div class="footer2">
             <p class="footer-copyright">
                 © 2010–2017 Компания «Техномарт»
                 <br>Все права защищены
             </p>
-            <div class="footer-social">
+            <div class="footer-social" aria-label="Ссылки соц.сетей">
                 <ul>
                     <li>
                         <a class="social-button" href="#">Вконтакте</a>
@@ -311,40 +319,42 @@
             </div>
             <p class="feedback">
                 Обратная связь:
-                <br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <br><a href="mailto:mail@htmlacademy.ru" aria-label="Почта для обратной связи">mail@htmlacademy.ru</a>
             </p>
             <p class="madeby">
                 Разработано —<br>
-                <a href="http://htmlacademy.ru">htmlacademy.ru</a>
+                <a href="http://htmlacademy.ru" aria-label="Ссылка на сайт разработчика">htmlacademy.ru</a>
             </p>
-        </section>
+        </div>
     </footer>
 
-    <section class="modal modal-write-us">
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-            <p class="modal-name">
-                <label for="write-us-name">Ваше имя:</label>
-                <input id="write-us-name" type="text" name="Имя" placeholder="Представтесь, пожалуйста" required>
-            </p>
-            <p class="modal-email">
-                <label for="write-us-email">Ваш e-mail:</label>
-                <input id="write-us-email" type="email" name="Почта" placeholder="Для отправки ответа" required>
-            </p>
-            <p>
-                <label for="write-us-text">Текст письма:</label>
-            </p>
-            <p>
-                <textarea id="write-us-text" name="Письмо" placeholder="В свободной форме"></textarea>
-            </p>
-            <input type="submit">
-        </form>
-        <button class="modal-close" value="close">x</button>
-    </section>
+    <div class="modal modal-write-us">
+        <fieldset>
+            <legend class="visually-hidden">Напишите нам</legend>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+                <p class="modal-name">
+                    <label for="write-us-name">Ваше имя:</label>
+                    <input id="write-us-name" type="text" name="Имя" placeholder="Представтесь, пожалуйста" required>
+                </p>
+                <p class="modal-email">
+                    <label for="write-us-email">Ваш e-mail:</label>
+                    <input id="write-us-email" type="email" name="Почта" placeholder="Для отправки ответа" required>
+                </p>
+                <p>
+                    <label for="write-us-text">Текст письма:</label>
+                </p>
+                <p>
+                    <textarea id="write-us-text" name="letter" placeholder="В свободной форме"></textarea>
+                </p>
+                <input type="submit">
+            </form>
+            <button class="modal-close" value="close" aria-label="Закрыть окно Обратной связи">x</button>
+        </fieldset>
+    </div>
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <span class="modal-close">x</span>
+        <span class="modal-close" aria-label="Закрыть окно карты">x</span>
     </section>
 </body>
 </html>
