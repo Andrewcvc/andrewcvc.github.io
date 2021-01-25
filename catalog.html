@@ -12,8 +12,9 @@
             <a class="main-header-logo">
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип інтернет-магазина Техномарт">
             </a>
-            <form action="sddsds.php" method="GET">
-                <input class="search" type="search" placeholder="Поиск:">
+            <form action="/search" method="GET">
+                <label for="search" class="visually-hidden">Поиск</label>
+                <input id="search" type="search" name="Поиск" value="Найти" placeholder="Поиск:">
             </form>
             <ul class="top-nav-bar">
                 <li class="bookmark"><a class="bookmark-link" href="bookmark.html">Закладки: 0</a></li>
@@ -67,8 +68,59 @@
             <p><button>up</button> <button>down</button></p>
         </div>
     <section class="filters">
-        <h2 class="visually-hidden">Список товаров</h2>
-    <!-- тут буде форма -->
+        <h3>Фильтр:</h3>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+                <label for="price">Цена:</label><br>
+                <input type="range" id="price" name="price-range">
+            </p>
+            <p>
+                <label class="visually-hidden" for="starting-price">Стартовая цена</label>
+                <input type="number" id="starting-price" name="starting-price">
+                <span class="between-price-symbol">—</span>
+                <label class="visually-hidden" for="end-price">Конечная цена</label>
+                <input type="number" id="end-price" name="end-price">
+            </p>
+            <fieldset class="manufacturers">
+                <legend>Производители:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                        <label for="filter-bosch">BOSCH</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interskol" id="filter-interskol">
+                        <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="makita" id="filter-makita" checked>
+                        <label for="filter-makita">MAKITA</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="dewalt" id="filter-dewalt">
+                        <label for="filter-dewalt">DEWALT</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hitachi" id="filter-hitachi">
+                        <label for="filter-hitachi">HITACHI</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="powered">
+                <legend>Питание:</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="powered-by" value="battery" id="filter-battery" checked>
+                        <label for="filter-battery">АККУМУЛЯТОРНЫЕ</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="powered-by" value="mains-supply" id="filter-mains-supply">
+                        <label for="filter-mains-supply">СЕТЕВЫЕ</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button class="show-button" type="submit">Показать</button>
+        </form>
     </section>
     <section class="catalog">
         <h2 class="visually-hidden">Каталог инструментов</h2>
@@ -313,11 +365,15 @@
 
     <section class="modal modal-basketadd">
         <h2>Товар добавлен в корзину!</h2>
-        <ul class="modal-checkout">
-            <li><a class="modal-checkout-button" href="checkout.html">Оформить заказ</a></li>
-            <li><button>Продолжить покупки</button></li>
+        <ul class="modal-order">
+            <li>
+                <a class="modal-make-order-button" href="checkout.html">Оформить заказ</a>
+            </li>
+            <li>
+                <button class="continue-button" type="button">Продолжить покупки</button>
+            </li>
         </ul>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button" aria-label="Закрыть модальное окно">x</button>
     </section>
 </body>
 </html>
