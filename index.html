@@ -97,19 +97,29 @@
         <section class="carosel slide">
             <h2 class="visually-hidden">Каталог</h2>
             <div class="carosel-inner">
-                <div class=" active item">
-                    <figure class="slider-image">
+                <div class="active item">
+                    <p class="slider-image">
                         <img src="img/drill.jpg" alt="Каталог дрели">
-                    </figure>
-                    <button class="button slider-button slider-button-back" type="button">Назад</button>
-                    <button class="button slider-button slider-button-next" type="button">Вперед</button>
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h2 class="catalog name">Дрели</h2>
-                            <p>Соседям на радость!</p>
-                            <a class="button catalog-button" href="#">Отркыть каталог</a>
-                        </div>
-                    </div>
+                    </p>
+                    <h3 class="catalog name">Дрели</h3>
+                    <p>Соседям на радость!</p>
+                    <ul class="slider-switches-top">
+                        <li class="slide-arrow-back">
+                            <button class="slider-button-top" type="button">Назад</button>
+                        </li>
+                        <li class="slide-arrow-next">
+                            <button class="slider-button-top" type="button">Вперед</button>
+                        </li>
+                    </ul>
+                    <a class="button catalog-button" href="catalog.html">Отркыть каталог</a>
+                    <ul class="slider-switches-bottom">
+                        <li class="slide-radio">
+                            <button class="slider-button-bottom" type="button">Первый слайд</button>
+                        </li>
+                        <li class="slide-radio">
+                            <button class="slider-button-bottom" type="button">Второй слайд</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -239,19 +249,36 @@
                 <p class="slogan">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                 <ul class="service-list">
                     <li class="service-item">
-                        <span class="button service-button service-button--active">Доставка</span>
+                        <button type="button" class="service-button service-button--active">Доставка</button>
                     </li>
                     <li class="service-item">
-                        <span class="button service-button">Гарантия</span>
+                        <button type="button" class="service-button">Гарантия</button>
                     </li>
                     <li class="service-item">
-                        <span class="button service-button">Кредит</span>
+                        <button type="button" class="service-button">Кредит</button>
                     </li>
                 </ul>
-                <div class="service-desc">
-                <h2>Доставка</h2>
-                <p class="service-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                </div>
+                <section class="delivery">
+                    <h3>Доставка</h3>
+                    <p>
+                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                    </p>
+                </section>
+                <section class="guarantee">
+                    <h3>Гарантия</h3>
+                    <p>
+                        Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+                    </p>
+                </section>
+                <section class="credit">
+                    <h3>Кредит</h3>
+                    <p>
+                        Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+                    </p>
+                    <p>
+                        <a class="button button-request" href="#">Отправить заявку</a>
+                    </p>
+                </section>
             </section>
             <section class="company-desc">
                 <h2>Компания "Техномарт"</h2>
@@ -269,13 +296,12 @@
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами,<br>
                 заехав в наш офис:</p>
-                <!-- Карта -->
-                <!-- Дописати дома кнопку -->
-                <a class="button map-button" href="#">Заблудились? Напишите нам</a>
+                <p><img src="map" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Телефон:+7 (812) 555-05-55"></p>
+                <button class="button map-button" type="button">Заблудились? Напишите нам</button>
             </section>
     </main>
     <footer class="main-footer">
-        <div class="footer1">
+        <div class="footer-top">
             <a class="main-header-logo" aria-label="Логотип Техномарт">
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип інтернет-магазина Техномарт">
             </a>
@@ -299,7 +325,7 @@
                 </ul>
             </div>
         </div>
-        <div class="footer2">
+        <div class="footer-bottom">
             <p class="footer-copyright">
                 © 2010–2017 Компания «Техномарт»
                 <br>Все права защищены
@@ -307,13 +333,13 @@
             <div class="footer-social" aria-label="Ссылки соц.сетей">
                 <ul>
                     <li>
-                        <a class="social-button" href="#">Вконтакте</a>
+                        <a class="social-button" href="https://vk.com/">Вконтакте</a>
                     </li>
                     <li>
-                        <a class="social-button" href="#">Фейсбук</a>
+                        <a class="social-button" href="https://www.facebook.com/">Фейсбук</a>
                     </li>
                     <li>
-                        <a class="social-button" href="#">Инстаграм</a>
+                        <a class="social-button" href="https://www.instagram.com/">Инстаграм</a>
                     </li>
                 </ul>
             </div>

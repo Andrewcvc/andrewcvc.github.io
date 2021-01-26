@@ -61,11 +61,20 @@
         <div class="catalog-navigation">
             <p class="catalog-navigation-title">Сортировка</p>
             <ul>
-                <li class="catalog-navigation-item catalog-navigation-item-current"><button>По цене</button></li>
-                <li class="catalog-navigation-item"><button>По типу</button></li>
-                <li class="catalog-navigation-item"><button>По функционалу</button></li>
+                <li class="catalog-navigation-item catalog-navigation-item-current">
+                    <a href="catalog.html/?sort-item-by=price">По цене</a>
+                </li>
+                <li class="catalog-navigation-item">
+                    <a href="catalog.html/?sort-item-by=type">По типу</a>
+                </li>
+                <li class="catalog-navigation-item">
+                    <a href="catalog.html/?sort-item-by=function">По функционалу</a>
+                </li>
             </ul>
-            <p><button>up</button> <button>down</button></p>
+            <p>
+                <a href="catalog.html/?sort-item-by=low-to-high">up</a> 
+                <a href="catalog.html/?sort-item-by=high-to-low">down</a>
+            </p>
         </div>
     <section class="filters">
         <h3>Фильтр:</h3>
@@ -283,7 +292,7 @@
         </section>
     </main>
     <footer class="main-footer">
-        <section class="footer1">
+        <div class="footer-top">
             <a class="main-header-logo">
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип інтернет-магазина Техномарт">
             </a>
@@ -306,8 +315,8 @@
                     <li><a href="specialoffers.html">Спецпредложения</a></li>
                 </ul>
             </div>
-        </section>
-        <section class="footer2">
+        </div>
+        <div class="footer-bottom">
             <p class="footer-copyright">
                 © 2010–2017 Компания «Техномарт»
                 <br>Все права защищены
@@ -315,13 +324,13 @@
             <div class="footer-social">
                 <ul>
                     <li>
-                        <a class="social-button" href="#">Вконтакте</a>
+                        <a class="social-button" href="https://vk.com/">Вконтакте</a>
                     </li>
                     <li>
-                        <a class="social-button" href="#">Фейсбук</a>
+                        <a class="social-button" href="https://www.facebook.com/">Фейсбук</a>
                     </li>
                     <li>
-                        <a class="social-button" href="#">Инстаграм</a>
+                        <a class="social-button" href="https://www.instagram.com/">Инстаграм</a>
                     </li>
                 </ul>
             </div>
@@ -333,7 +342,7 @@
                 Разработано —<br>
                 <a href="http://htmlacademy.ru">htmlacademy.ru</a>
             </p>
-        </section>
+        </div>
     </footer>
 
     <section class="modal modal-basketadd">
