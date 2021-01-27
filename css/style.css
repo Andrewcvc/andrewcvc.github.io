@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* .visually-hidden {
     position: absolute;
     width: 1px;
@@ -8,3 +9,26 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 } */
+/* швидко закоментувати блок кода shift+alt+a */
+/* або підключати шрифт через @font-face або прописувати в head html ссилки, часто так буває якщо немає шрифта на гугл фонтс, але є файл на компі від заказчика*/
+/* @font-face {
+    font-family: 'Roboto', 'Open Sans' sans-serif;
+    src: 
+        url('/fonts/web/ptsansbold.woff2') format('woff2'),
+        url('/fonts/web/ptsans.woff2') format('woff2'),
+        url('/fonts/web/cuprum.woff2') format('woff2'),
+        url('/fonts/web/cuprumbold.woff2') format('woff2'),
+        url('/fonts/web/cuprumbolditalic.woff2') format('woff2'),
+        url('/fonts/web/cuprumitalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+/*Главная страница*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
