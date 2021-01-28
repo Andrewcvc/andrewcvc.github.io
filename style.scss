@@ -25,13 +25,121 @@
     font-weight: normal;
     font-style: normal;
 } */
+/* text-transform: uppercase; -capital letters */
+/* for buttons use font: inherit;!!!!! */
+
 
 /*Главная страница*/
 
-html, body {
+body {
     margin: 0;
     padding: 0;
+
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+
+    background-color: #ffffff;
 }
+
 img {
     max-width: 100%;
 }
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+header {
+    background-color: #f3f7f8;
+}
+
+.top-navigation, #search {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.bottom-navigation {
+    line-height: 18px;
+}
+
+.top-nav-bar, 
+.checkout, 
+.user-navigation, 
+.site-navigation {
+    list-style: none;
+}
+
+.top-nav-bar a, 
+.checkout a, 
+.site-navigation a {
+    color: #ffffff;
+}
+
+.top-nav-bar a:hover,
+#search:hover {
+    background-color: #212a3a;
+}
+
+.top-nav-bar a:focus {
+    color: #8b8e94;
+    background-color: #161d29;
+}
+
+#search:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#search::placeholder {
+    color: #ffffff;
+}
+
+.checkout a {
+    background-color: #63a63e;
+}
+
+.checkout a:hover {
+    background-color: #5fbb2d;
+}
+
+.checkout a:focus {
+    color: #b1c5a8;
+    background-color: #518534;
+}
+
+.main-header-logo {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+}
+
+.main-header-logo:hover {
+    background-color: #ca2c37;
+}
+
+.main-header-logo:focus {   
+    background-color: #ba2732;
+}
+
