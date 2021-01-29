@@ -28,14 +28,13 @@
 /* text-transform: uppercase; -capital letters */
 /* for buttons use font: inherit;!!!!! */
 
-
 /*Главная страница*/
 
 body {
     margin: 0;
     padding: 0;
 
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -67,8 +66,10 @@ header {
     background-color: #f3f7f8;
 }
 
-.top-navigation, #search {
-    font-family: 'Cuprum', 'Arial', sans-serif;
+.top-navigation,
+.bottom-navigation,
+#search {
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -78,17 +79,18 @@ header {
 
 .bottom-navigation {
     line-height: 18px;
+    background-color: #ffffff;
 }
 
-.top-nav-bar, 
-.checkout, 
-.user-navigation, 
+.top-nav-bar,
+.checkout,
+.user-navigation,
 .site-navigation {
     list-style: none;
 }
 
-.top-nav-bar a, 
-.checkout a, 
+.top-nav-bar a,
+.checkout a,
 .site-navigation a {
     color: #ffffff;
 }
@@ -126,7 +128,7 @@ header {
 }
 
 .main-header-logo {
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 24px;
     line-height: 24px;
     color: #ffffff;
@@ -139,7 +141,80 @@ header {
     background-color: #ca2c37;
 }
 
-.main-header-logo:focus {   
+.main-header-logo:focus {
     background-color: #ba2732;
 }
 
+.site-description p {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+}
+
+.header-contact-info {
+    width: 270px;
+}
+.header-contact-info p:first-of-type {
+    width: 150px;
+    height: 22px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    color: #e9292a;
+    margin: 0;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-left: 68px;
+    padding-right: 46px;
+
+    border: 3px solid #ffffff;
+    background-image: url(/svg/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 19px;
+    background-position-x: 12px;
+}
+
+
+.header-contact-info p:last-of-type {
+    margin: 0px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    color: #32425c;
+    text-align: center;
+}
+
+.user-navigation a {
+    color: #000000;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.user-navigation li:first-of-type {
+    width: 48px;
+    height: 22px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 47px;
+    padding-right: 26px;
+
+    background-color: #ffffff;
+    background-image: url(/svg/icon-login.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 14px;
+}
+
+.user-navigation li:last-of-type {
+    width: 100px;
+    height: 22px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    background-color: #ffffff;
+}
