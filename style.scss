@@ -67,19 +67,14 @@ header {
 }
 
 .top-navigation,
-.bottom-navigation,
 #search {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
+    display: flex;
 
     background-color: #293449;
-}
-
-.bottom-navigation {
-    line-height: 18px;
-    background-color: #ffffff;
 }
 
 .top-nav-bar,
@@ -145,6 +140,10 @@ header {
     background-color: #ba2732;
 }
 
+.header-middle {
+    display: flex;
+}
+
 .site-description p {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
@@ -191,10 +190,15 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 21px;
+    background-color: #ffffff;
+}
+
+.user-navigation li {
+    height: 45px;
 }
 
 .user-navigation li:first-of-type {
-    width: 48px;
+/*     width: 48px;
     height: 22px;
     padding-top: 12px;
     padding-bottom: 11px;
@@ -205,16 +209,52 @@ header {
     background-image: url(/svg/icon-login.svg);
     background-repeat: no-repeat;
     background-position: left;
-    background-position-x: 14px;
+    background-position-x: 14px; */ 
 }
 
-.user-navigation li:last-of-type {
+/* .user-navigation li:last-of-type {
     width: 100px;
     height: 22px;
     padding-top: 12px;
     padding-bottom: 11px;
     padding-left: 25px;
     padding-right: 25px;
+    cursor: pointer;
 
-    background-color: #ffffff;
+    background-color: #ffffff; 
+} */
+
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #ee3643;
+}
+.user-navigation a:active {
+    color: #cacaca;
+}
+.login-icon path:hover {
+    fill: #32425c;
+}
+/* .login-icon path:focus {
+    fill: #cacaca;
+} */
+
+.bottom-navigation {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    background-color: #32425c;
+}
+.site-navigation {
+    display: flex;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #293449;
+}
+
+.site-navigation a:active {
+    color: #a1a4a8;
+    background-color: #1d2739;
 }
