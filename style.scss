@@ -128,8 +128,9 @@ header {
     line-height: 24px;
     color: #ffffff;
     text-transform: uppercase;
-
+    
     background-color: #ee3643;
+    box-shadow: inset 0 5 rgba(238 54 67 0.24);
 }
 
 .main-header-logo:hover {
@@ -479,9 +480,24 @@ header {
     display: none;
 } */
 
+.bottom-index-columns h2 {
+    font-family: "Cuprum", 'Arial', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
 
+.company-desc ul {
+    font-family: "Cuprum", 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    list-style-image: url("/img/Layer23new1.png");
+}
 
-
+.footer-bottom {
+    background-color: black;
+}
 
 
 
