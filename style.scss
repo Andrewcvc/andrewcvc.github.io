@@ -496,6 +496,110 @@ header {
     list-style-image: url("/img/Layer23new1.png");
 }
 
+.footer-top {
+    font-family: "Cuprum", 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+    text-decoration: underline;
+}
+.footer-navigation a:active {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.footer-site-navigation-bottom, .footer-site-navigation-top {
+    list-style: none;
+}
+
+.footer-site-navigation-top a {
+    color: #ffffff;
+}
+.footer-site-navigation-bottom a {
+    color: #ffd180;
+}
+
+.footer-bottom {
+    font-family: "Cuprum", 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #293449;
+}
+
+.feedback a,
+.made-by a {
+    color: #ffd180;
+}
+.feedback a:hover,
+.made-by a:hover,
+.feedback a:focus,
+.made-by a:focus {
+    text-decoration: underline;
+}
+.feedback a:active,
+.made-by a:active {
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.footer-social-list {
+    list-style: none;
+}
+
+.footer-social-list li {
+    width: 40px;
+    height: 40px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+.footer-social-list a {
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 23px;
+    
+}
+.footer-social-list li:nth-child(1) a {
+    color: transparent;
+    background-image: url(/svg/icon-vk.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 4px;
+}
+.footer-social-list li:nth-child(2) a {
+    color: transparent;
+    background-image: url(/svg/icon-fb.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-social-list li:nth-child(3) a {
+    color: transparent;
+    background-image: url(/svg/icon-insta.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 4.5px;
+}
+
+.footer-social-list a:hover,
+.footer-social-list a:focus,
+.footer-social-list a:active {
+    background-color: #ee3643;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
 
 
 
