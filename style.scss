@@ -594,7 +594,101 @@ header {
     border-radius: 50%;
 }
 
+.modal-write-us {
+    width: 620px;
+    height: 430px;
+    margin-bottom: 50px;
+    border-top: 7px solid red;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+}
+.modal-write-us fieldset {
+    font-family: "Cuprum", 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    width: 620px;
+    height: 430px;
+}
 
+.write-us-form input::placeholder,
+.bottom-form textarea::placeholder{
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.write-us-form input,
+.bottom-form textarea {
+    border: 2px solid #dee3e4;
+    border-radius: 2px;
+}
+.write-us-form input:hover,
+.bottom-form textarea:hover {
+    border: 2px solid #b5b5b5;
+}
+.write-us-form input:focus,
+.bottom-form textarea:focus {
+    border-color: #ee3643;
+}
+
+.write-us-form input {
+    width: 220px;
+    height: 38px;
+}
+.bottom-form textarea {
+    width: 460px;
+    height: 114px;
+    resize: none;
+}
+
+.modal-submit {
+/*     width: 620px;
+    height: 112px; */
+    background-color: #f4f4f4;
+/*     display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* .modal-submit button {
+    width: 460px;
+    height: 38px;    
+} */
+
+.modal-close {
+    width: 21px;
+    height: 21px;
+    color: transparent;
+    background-image: url(/svg/form-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-map {
+    width: 940px;
+    height: 446px;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.25);
+    margin-top: 75px;
+}
+
+/* КАТАЛОГ */
+
+.catalog-page {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+
+    background-color: #ffffff;
+}
 
 
 

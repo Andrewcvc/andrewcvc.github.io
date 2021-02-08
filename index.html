@@ -361,33 +361,37 @@
     </footer>
 
     <div class="modal modal-write-us">
-        <fieldset>
+        <button class="modal-close" value="close" aria-label="Закрыть окно Обратной связи">x</button>
+        <fieldset class="write-us-form">
             <legend class="visually-hidden">Напишите нам</legend>
             <form action="https://echo.htmlacademy.ru" method="POST">
-                <p class="modal-name">
-                    <label for="write-us-name">Ваше имя:</label>
-                    <input id="write-us-name" type="text" name="Имя" placeholder="Представтесь, пожалуйста" required>
+                <div class="top-form">
+                    <p class="modal-name">
+                        <label for="write-us-name">Ваше имя:</label><br>
+                        <input id="write-us-name" type="text" name="Имя" placeholder="Представтесь, пожалуйста" required>
+                    </p>
+                    <p class="modal-email">
+                        <label for="write-us-email">Ваш e-mail:</label><br>
+                        <input id="write-us-email" type="email" name="Почта" placeholder="Для отправки ответа" required>
+                    </p>
+                </div>
+                <p class="bottom-form">
+                    <label for="write-us-text">Текст письма:</label><br>
+                    <textarea id="write-us-text" name="letter" placeholder="В свободной форме" required></textarea>
                 </p>
-                <p class="modal-email">
-                    <label for="write-us-email">Ваш e-mail:</label>
-                    <input id="write-us-email" type="email" name="Почта" placeholder="Для отправки ответа" required>
+                <p class="modal-submit">
+                    <button class="button" type="submit">Отправить</button>
                 </p>
-                <p>
-                    <label for="write-us-text">Текст письма:</label>
-                </p>
-                <p>
-                    <textarea id="write-us-text" name="letter" placeholder="В свободной форме"></textarea>
-                </p>
-                <button class="modal-submit" type="submit">Отправить</button>
             </form>
-            <button class="modal-close" value="close" aria-label="Закрыть окно Обратной связи">x</button>
         </fieldset>
     </div>
 
-    <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <a href="yandex.map.ru"><img src="" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Телефон:+7 (812) 555-05-55"></a>
-        <button class="modal-close" type="button" aria-label="Закрыть окно карты">x</button>
-    </section>
+    <div class="modal modal-map">
+        <section>
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <a href="yandex.map.ru"><img src="/img/modalmap.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Телефон:+7 (812) 555-05-55"></a>
+            <button class="modal-close" type="button" aria-label="Закрыть окно карты">x</button>
+        </section>
+    </div>
 </body>
 </html>
