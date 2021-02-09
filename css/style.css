@@ -701,7 +701,7 @@ header {
 
 .write-us-form input:focus,
 .bottom-form textarea:focus {
-  border-color: #ee3643;
+  outline: 2px solid red;
 }
 
 .write-us-form input {
