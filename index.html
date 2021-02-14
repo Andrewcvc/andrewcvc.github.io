@@ -12,20 +12,24 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="top-navigation" aria-label="Навигация по сайту">
-            <a class="main-logo" href="index.html">Техномарт</a>
-            <form action="/search" method="GET">
-                <label for="search" class="visually-hidden">Поиск</label>
-                <input id="search" type="search" name="Поиск" value="Найти" placeholder="Поиск:">
-            </form>
-            <ul class="top-nav-bar">
-                <li class="bookmark"><a href="bookmark.html">Закладки: 0</a></li>
-                <li class="basket"><a href="basket.html">Корзина: 0</a></li>
-            </ul>
-            <ul class="checkout">
-                <li><a href="checkout.html">Оформить заказ</a></li>
-            </ul>
-        </nav>
+        <div class="top-navigation-wrapper">
+            <div class="container">
+                <nav class="top-navigation" aria-label="Навигация по сайту">
+                    <a class="main-logo" href="index.html">Техномарт</a>
+                    <form action="/search" method="GET">
+                        <label for="search" class="visually-hidden">Поиск</label>
+                        <input id="search" type="search" name="Поиск" value="Найти" placeholder="Поиск:">
+                    </form>
+                    <ul class="top-nav-bar">
+                        <li class="bookmark"><a href="bookmark.html">Закладки: 0</a></li>
+                        <li class="basket"><a href="basket.html">Корзина: 0</a></li>
+                    </ul>
+                    <ul class="checkout">
+                        <li><a href="checkout.html">Оформить заказ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <div class="header-middle">
             <div class="site-description">
                 <p><em>Интернет-магазин<br> строительных материалов<br> и инструментова для ремонта</em></p>
