@@ -65,6 +65,8 @@ a {
 header {
     background-color: #f3f7f8;
     width: 100%;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .top-navigation,
@@ -80,7 +82,7 @@ header {
 .top-navigation-wrapper {
     width: 100%;
     background-color: #293449;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .container .top-navigation {
@@ -133,6 +135,10 @@ header {
     color: #ffffff;
 }
 
+.top-nav-bar {
+    display: flex;
+}
+
 .checkout a {
     background-color: #63a63e;
 }
@@ -169,6 +175,12 @@ header {
 
 .header-middle {
     display: flex;
+    margin-bottom: 40px;
+}
+
+.site-description {
+    padding: 0px 49px;
+    margin-right: 10px;
 }
 
 .site-description p {
@@ -177,10 +189,14 @@ header {
     line-height: 23px;
     font-style: italic;
     color: #ee3643;
+    padding: 0px;
+    margin: 0px;
 }
 
 .header-contact-info {
     width: 270px;
+    margin: 0px 10px;
+    padding-right: 30px;
 }
 .header-contact-info p:first-of-type {
     width: 150px;
@@ -212,45 +228,32 @@ header {
     text-align: center;
 }
 
+.user-navigation {
+    width: 300px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-left: 10px;
+}
+
 .user-navigation a {
     color: #000000;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 21px;
     background-color: #ffffff;
+    display: block;
 }
 
-.user-navigation li {
-    height: 45px;
+.login-link {
+    padding: 12px 42px;
+    margin-left: 19px;
 }
-
-/* .user-navigation li:first-of-type {
-    width: 48px;
-    height: 22px;
-    padding-top: 12px;
-    padding-bottom: 11px;
-    padding-left: 47px;
-    padding-right: 26px;
-
-    background-color: #ffffff;
-    background-image: url(/svg/icon-login.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-x: 14px;
-} */
-
-/* .user-navigation li:last-of-type {
-    width: 100px;
-    height: 22px;
-    padding-top: 12px;
-    padding-bottom: 11px;
-    padding-left: 25px;
-    padding-right: 25px;
-    cursor: pointer;
-
-    background-color: #ffffff; 
-} */
-
+.register-link {
+    padding: 12px 24px;
+}
 
 .user-navigation a:hover,
 .user-navigation a:focus {
