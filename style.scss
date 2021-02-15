@@ -278,6 +278,7 @@ header {
 }
 .site-navigation {
     display: flex;
+    justify-content: space-around;
 }
 
 .site-navigation a:hover,
@@ -294,6 +295,8 @@ header {
     list-style: none;
     font-family: "Cuprum", Arial, sans-serif;
     color: #ffffff;
+    padding: 0;
+    margin: 0;
 }
 
 .site-sections-list h3 {
@@ -339,6 +342,12 @@ header {
 
 .slider-switches-top {
     list-style: none;
+    padding: 115px 20px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+     
 }
 .slider-switches-top button {
     text-align: center;
@@ -371,6 +380,9 @@ header {
 
 .slider-switches-bottom {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 /* .slide-radio-button {
     border: 0;
@@ -378,6 +390,24 @@ header {
 } */
 .slide-radio-button:active {
     background-image: url(img/sliderindicator.svg);
+}
+
+.active-item {
+    display: flex;
+    width: 620px;
+    height: 266px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.slider-bottom-control {
+    display: flex;
+
 }
 
 .section-title {

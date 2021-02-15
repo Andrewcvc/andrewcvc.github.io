@@ -305,6 +305,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .site-navigation a:hover,
@@ -321,6 +323,8 @@ header {
   list-style: none;
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 
 .site-sections-list h3 {
@@ -370,6 +374,14 @@ header {
 
 .slider-switches-top {
   list-style: none;
+  padding: 115px 20px 0px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .slider-switches-top button {
@@ -404,6 +416,11 @@ header {
 } */
 .slider-switches-bottom {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* .slide-radio-button {
@@ -412,6 +429,35 @@ header {
 } */
 .slide-radio-button:active {
   background-image: url(img/sliderindicator.svg);
+}
+
+.active-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 620px;
+  height: 266px;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-bottom-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section-title {
