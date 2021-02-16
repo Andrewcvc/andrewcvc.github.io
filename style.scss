@@ -297,8 +297,26 @@ header {
     color: #ffffff;
     padding: 0;
     margin: 0;
-
 }
+
+.site-section-wrapper-1 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.site-section-wrapper-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-section-wrapper-2 .site-sections-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
 
 .site-sections-list li {
     width: 300px;
@@ -348,6 +366,7 @@ header {
 }
 .item-4 {
     background-color: #8ed78f;
+    margin-bottom: 20px;
 }
 .item-5 {
     background-color: #ffc047;
@@ -360,13 +379,12 @@ header {
     display: flex;
     justify-content: space-between;
 
-     
 }
 .slider-switches-top button {
     text-align: center;
     vertical-align: middle;
     border: 0;
-    background-color: /* transparent */ black;
+    background-color: transparent;
 }
 
 .button {
@@ -387,9 +405,7 @@ header {
 .button:active {
     background-color: #ba2732;
 }
-/* .button.catalog-button {
-    border-width: 14px 47px;
-} */
+
 
 .slider-switches-bottom {
     list-style: none;
@@ -397,32 +413,28 @@ header {
     margin: 0;
     display: flex;
 }
-/* .slide-radio-button {
-    border: 0;
-    background-color: transparent;
-} */
+
+.slider-bottom-control {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 25px;
+    margin-bottom: 22px;
+}
+
 .slide-radio-button:active {
     background-image: url(img/sliderindicator.svg);
 }
 
 .active-item {
-    display: flex;
     width: 620px;
-    height: 266px;
+    height: 286px;
     margin: 0;
     padding: 0;
+    background-image: url(/img/slider2jpeg.jpg);
+    background-repeat: no-repeat;
+    background-size: 620px 286px;
 }
 
-
-.slider-control {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.slider-bottom-control {
-    display: flex;
-
-}
 
 .section-title {
     background-color: #f9f5f0;

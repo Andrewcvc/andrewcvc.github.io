@@ -327,6 +327,38 @@ header {
   margin: 0;
 }
 
+.site-section-wrapper-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.site-section-wrapper-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-section-wrapper-2 .site-sections-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .site-sections-list li {
   width: 300px;
 }
@@ -377,6 +409,7 @@ header {
 
 .item-4 {
   background-color: #8ed78f;
+  margin-bottom: 20px;
 }
 
 .item-5 {
@@ -399,7 +432,7 @@ header {
   text-align: center;
   vertical-align: middle;
   border: 0;
-  background-color: black;
+  background-color: transparent;
 }
 
 .button {
@@ -422,9 +455,6 @@ header {
   background-color: #ba2732;
 }
 
-/* .button.catalog-button {
-    border-width: 14px 47px;
-} */
 .slider-switches-bottom {
   list-style: none;
   padding: 0;
@@ -434,41 +464,27 @@ header {
   display: flex;
 }
 
-/* .slide-radio-button {
-    border: 0;
-    background-color: transparent;
-} */
+.slider-bottom-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  margin-left: 25px;
+  margin-bottom: 22px;
+}
+
 .slide-radio-button:active {
   background-image: url(img/sliderindicator.svg);
 }
 
 .active-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 620px;
-  height: 266px;
+  height: 286px;
   margin: 0;
   padding: 0;
-}
-
-.slider-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.slider-bottom-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-image: url(/img/slider2jpeg.jpg);
+  background-repeat: no-repeat;
+  background-size: 620px 286px;
 }
 
 .section-title {
