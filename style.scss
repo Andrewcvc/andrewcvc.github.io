@@ -308,6 +308,7 @@ header {
 .site-section-wrapper-2 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 55px;
 }
 
 .site-section-wrapper-2 .site-sections-list {
@@ -427,17 +428,22 @@ header {
 
 .active-item {
     width: 620px;
-    height: 286px;
+    height: 282px;
     margin: 0;
     padding: 0;
     background-image: url(/img/slider2jpeg.jpg);
     background-repeat: no-repeat;
-    background-size: 620px 286px;
+    background-size: 620px 282px;
 }
 
 
 .section-title {
     background-color: #f9f5f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 26px;
+    margin-bottom: 20px;
 }
 .section-title h2 {
     font-family: "Cuprum", Arial, sans-serif;
@@ -445,21 +451,50 @@ header {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    padding: 0;
+    margin: 30px 0px;
+}
+.popular-items-button{
+    display: block;
+    padding: 10px 55px;
+    margin: 25px 0px;
 }
 
 .popular-items-list {
     list-style: none;
-    /* display: flex; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 .popular-items-list li {
+    width: 220px;
     border: 1px solid #eaeaea;
     text-align: center;
 }
+.popular-items-list p,
+.popular-items-list h3 {
+    margin: 0;
+    padding: 0;
+}
+.popular-items-list h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .popular-items-list a {
+    display: block;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
     color: #000000;
+}
+
+.item-image a {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .popular-items-list .old-price {
     font-size: 17px;
@@ -467,14 +502,23 @@ header {
     font-weight: bold;
     color: #a9a9a9;
     text-decoration: line-through;
+    margin-bottom: 15px;
 }
+.old-price + p {
+    margin-bottom: 20px;
+}
+.popular-items-list .no-discount {
+    margin-top: 43px;
+    margin-bottom: 20px;
+}
+
 .popular-items-list .price {
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
     color: #ffffff;
     border: 1px solid transparent;
-    border-width: 141px 38px;
+    border-width: 10px 38px;
     background-image: url(/svg/red-button.svg);
     background-repeat: no-repeat;
     background-position: center;
