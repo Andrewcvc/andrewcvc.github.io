@@ -45,19 +45,24 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 a {
     text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -87,8 +92,7 @@ header {
 
 .container .top-navigation {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -110,6 +114,7 @@ header {
 .checkout a,
 .site-navigation a {
     color: #ffffff;
+    display: block;
 }
 
 .top-nav-bar a:hover,
@@ -118,36 +123,103 @@ header {
 }
 
 .top-nav-bar a:focus {
-    color: #8b8e94;
+    opacity: 0.6;
     background-color: #161d29;
 }
 
 #search {
     border: none;
+    outline: none;
+    width: 270px;
+    height: 42px;
+    padding: 12px 0px;
+    padding-left: 50px;
+    position: relative;
 }
-
 #search:focus {
     color: #000000;
     background-color: #ffffff;
 }
-
 #search::placeholder {
     color: #ffffff;
+}
+#search::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 17px;
+
+    width: 17px;
+    height: 17px;
+
+    background-image: url(/svg/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
 }
 
 .top-nav-bar {
     display: flex;
 }
+.top-nav-bar a {
+    position: relative;
+}
+
+.bookmark-link {
+    padding: 12px 0px;
+    padding-left: 43px;
+    padding-right: 29px;
+}
+.basket-link {
+    padding: 12px 0px;
+    padding-right: 30px;
+    padding-left: 50px;
+}
+
+.bookmark-link::before,
+.basket-link::before {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    left: 17px;
+
+    width: 17px;
+    height: 17px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
+}
+.bookmark-link::before {
+    background-image: url(/svg/icon-bookmark.svg);
+}
+.basket-link::before {
+    background-image: url(/svg/icon-cart.svg);
+}
+.bookmark-link:hover::before,
+.basket-link:hover::before {
+    opacity: 1;
+}
+.bookmark-link:active::before,
+.basket-link:active::before,
+.bookmark-link:focus::before,
+.basket-link:focus::before {
+    opacity: 0.5;
+}
 
 .checkout a {
     background-color: #63a63e;
+    padding: 12px 21px;
 }
 
 .checkout a:hover {
     background-color: #5fbb2d;
 }
 
-.checkout a:focus {
+.checkout a:focus,
+.checkout a:active {
     color: #b1c5a8;
     background-color: #518534;
 }
