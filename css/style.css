@@ -295,16 +295,23 @@ header {
   line-height: 21px;
   color: #e9292a;
   margin: 0;
-  padding-top: 9px;
-  padding-bottom: 8px;
-  padding-left: 68px;
-  padding-right: 46px;
+  padding: 9px 0px;
+  padding-left: 72px;
+  padding-right: 42px;
+  position: relative;
   border: 3px solid #ffffff;
+}
+
+.header-contact-info p:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  width: 20px;
+  height: 20px;
   background-image: url(/svg/icon-phone.svg);
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: 19px;
-  background-position-x: 12px;
+  background-position: 0 0;
 }
 
 .header-contact-info p:last-of-type {
@@ -317,17 +324,19 @@ header {
 
 .user-navigation {
   width: 300px;
-  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 0px;
+  padding-left: 19px;
   margin-left: 10px;
 }
 
@@ -341,8 +350,31 @@ header {
 }
 
 .login-link {
-  padding: 12px 42px;
-  margin-left: 19px;
+  padding: 12px 0px;
+  padding-left: 52px;
+  padding-right: 31px;
+  position: relative;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 22px;
+  height: 19px;
+  background-image: url(/svg/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login-link:hover::before,
+.login-link:focus::before {
+  background-image: url(/svg/icon-login-hover.svg);
+}
+
+.login-link:active::before {
+  background-image: url(/svg/icon-login.svg);
 }
 
 .register-link {
@@ -358,13 +390,6 @@ header {
   color: #cacaca;
 }
 
-.login-icon path:hover {
-  fill: #32425c;
-}
-
-/* .login-icon path:focus {
-    fill: #cacaca;
-} */
 .bottom-navigation {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
