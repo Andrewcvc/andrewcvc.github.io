@@ -403,8 +403,22 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.site-navigation a {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 110px;
+  padding: 19px 37px;
+}
+
+.site-navigation .long-link {
+  padding: 19px 10px;
 }
 
 .site-navigation a:hover,
@@ -494,16 +508,61 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.site-section {
+  position: relative;
+}
+
+.site-section::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .item-1 {
   background-color: #ffbf47;
+}
+
+.item-1::after {
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  right: 0px;
+  background-image: url(/img/new.png);
+}
+
+.item-1 h3::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 66px;
+  top: 31px;
+  right: 43px;
+  background-image: url(/svg/icon-1.svg);
 }
 
 .item-2 {
   background-color: #3bbce3;
 }
 
+.item-2::after {
+  width: 76px;
+  height: 62px;
+  top: 33px;
+  right: 28px;
+  background-image: url(/svg/icon-2.svg);
+}
+
 .item-3 {
   background-color: #dc91d8;
+}
+
+.item-3::after {
+  width: 79px;
+  height: 63px;
+  top: 31px;
+  right: 31px;
+  background-image: url(/svg/icon-3.svg);
 }
 
 .item-4 {
@@ -511,8 +570,24 @@ header {
   margin-bottom: 20px;
 }
 
+.item-4::after {
+  width: 60px;
+  height: 73px;
+  top: 26px;
+  right: 45px;
+  background-image: url(/svg/icon-4.svg);
+}
+
 .item-5 {
   background-color: #ffc047;
+}
+
+.item-5::after {
+  width: 79px;
+  height: 64px;
+  top: 32px;
+  right: 31px;
+  background-image: url(/svg/icon-5.svg);
 }
 
 .slider-switches-top {
@@ -543,6 +618,8 @@ header {
   background-color: #ee3643;
   border: 1px solid transparent;
   border-radius: 3px;
+  display: inline-block;
+  padding: 10px 48px;
 }
 
 .button:hover,
@@ -611,12 +688,9 @@ header {
   margin: 30px 0px;
 }
 
-.popular-items-button {
-  display: block;
-  padding: 10px 55px;
-  margin: 25px 0px;
-}
-
+/* .popular-items-button {
+    padding: 10px 55px;
+} */
 .popular-items-list {
   list-style: none;
   padding: 0;
