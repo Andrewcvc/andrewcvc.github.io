@@ -558,25 +558,6 @@ header {
     background-color: #ba2732;
 }
 
-
-.slider-switches-bottom {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.slider-bottom-control {
-    display: flex;
-    margin-top: 80px;
-    margin-left: 25px;
-    margin-bottom: 22px;
-}
-
-.slider-radio-button:active {
-    background-image: url(img/sliderindicator.svg);
-}
-
 .common-slider {
     position: relative;
     width: 620px;
@@ -584,9 +565,6 @@ header {
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    /* background-image: url(/img/slider2jpeg.jpg);
-    background-repeat: no-repeat;
-    background-size: 620px 282px; */
 }
 
 .slider-item {
@@ -631,6 +609,44 @@ header {
 .main-slider-navigation-to-next {
     right: 0;
 }
+
+.catalog-button {
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+}
+
+.slider-switches-bottom {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 32px;
+    position: absolute;
+    bottom: 30px;
+    left: 294px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-radio-button {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.slide-radio-button svg {
+    fill: #fff;
+}
+
+.slide-radio-button:active svg,
+.slide-radio-button:focus svg {
+    stroke-width: 15px;
+    stroke:#fff;
+    fill: red;
+}
+
 .section-title {
     background-color: #f9f5f0;
     display: flex;
