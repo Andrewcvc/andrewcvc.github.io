@@ -772,7 +772,7 @@ header {
 .services {
     width: 100%;
     background-color: #f4f8f9;
-    margin-bottom: 55px;
+    margin-bottom: 75px;
 }
 .services h2 {
     font-family: "Cuprum", 'Arial', sans-serif;
@@ -792,18 +792,28 @@ header {
 }
 
 .service-list {
+    position: relative;
     width: 240px;
     list-style: none;
-    background-image: url(/img/Layer118.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 10px 279px;
     padding: 50px 0px;
     margin: 0px;
     margin-bottom: 45px;
 }
+
+.service-list::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 280px;
+    left: 230px;
+    top: 5px;
+    background-image: url(/img/Layer118.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .service-button {
-    width: 230px;
+    width: 240px;
     font-family: "Cuprum", 'Arial', sans-serif;
     font-size: 21px;
     line-height: 30px;
@@ -814,9 +824,14 @@ header {
     box-shadow: inset 0 -1 #33445a;
     padding: 15px 139px 15px 22px;
 }
-.service-button--active {
+.service-button:hover {
+    background-color: #293449;
+}
+.service-button:focus,
+.service-button:active {
     color: #32425c;
     background-color: #ffffff;
+    outline: none;
 }
 .service-item:last-child .service-button {
     border: none;
@@ -878,7 +893,6 @@ header {
 .bottom-index-columns {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 85px;
 }
 
 .bottom-index-columns h2 {
@@ -887,6 +901,7 @@ header {
     line-height: 30px;
     font-weight: 400;
     margin: 0;
+    margin-bottom: 30px;
     padding: 0;
 }
 
@@ -898,6 +913,17 @@ header {
     width: 540px;
 }
 
+.company-desc p {
+    margin-bottom: 25px;
+}
+
+.contacts p:first-of-type {
+    margin-bottom: 31px;
+}
+.contacts p:last-of-type {
+    margin-bottom: 42px;
+}
+
 .company-desc ul {
     font-family: "Cuprum", 'Arial', sans-serif;
     font-size: 18px;
@@ -905,6 +931,14 @@ header {
     font-weight: 400;
     list-style-image: url("/img/Layer23new1.png");
     margin: 0;
+    margin-bottom: 35px;
+}
+
+.transport-company-list li {
+    margin-bottom: 23px
+}
+.transport-company-list li:last-of-type {
+    margin-bottom: 0;
 }
 
 .footer-top {
@@ -915,6 +949,8 @@ header {
     font-weight: 400;
     color: #ffffff;
     background-color: #32425c;
+    margin-top: 85px;
+    padding-bottom: 50px;
 }
 
 .footer-site-navigation-top a:hover,
@@ -969,7 +1005,7 @@ header {
 .footer-top-wrapper-2 {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+/*     padding-bottom: 50px; */
 }
 .footer-site-navigation-bottom {
     display: flex;
@@ -988,6 +1024,7 @@ header {
 
 .footer-bottom .container {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 35px;
     padding-bottom: 30px;
 }
@@ -997,12 +1034,12 @@ header {
     padding: 0px;
 }
 
-.footer-copyright {
+.footer-bottom .footer-copyright {
     width: 240px;
+    margin-right: 150px;
 }
 
 .footer-social {
-    margin-left: 150px;
     margin-right: 120px;
 }
 
@@ -1031,41 +1068,33 @@ header {
     margin: 0px;
     padding: 0px;
     display: flex;
+    flex-wrap: wrap;
     width: 130px;
     justify-content: space-between;
 }
 
-.footer-social-list li {
+.social-button {
     width: 40px;
     height: 40px;
+    display: flex;
     background-color: #212a3a;
     border-radius: 50%;
 }
-.footer-social-list a {
-    color: #ffffff;
-    text-align: center;
-    padding-bottom: 23px;
-    
-}
+
 .footer-social-list li:nth-child(1) a {
-    color: transparent;
     background-image: url(/svg/icon-vk.svg);
     background-repeat: no-repeat;
     background-position: center;
-    padding-left: 4px;
 }
 .footer-social-list li:nth-child(2) a {
-    color: transparent;
     background-image: url(/svg/icon-fb.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 .footer-social-list li:nth-child(3) a {
-    color: transparent;
     background-image: url(/svg/icon-insta.svg);
     background-repeat: no-repeat;
     background-position: center;
-    padding-left: 4.5px;
 }
 
 .footer-social-list a:hover,
