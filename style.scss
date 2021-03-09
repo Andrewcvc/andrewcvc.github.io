@@ -134,7 +134,6 @@ header {
     height: 42px;
     padding: 12px 0px;
     padding-left: 50px;
-    position: relative;
 }
 #search:focus {
     color: #000000;
@@ -143,19 +142,11 @@ header {
 #search::placeholder {
     color: #ffffff;
 }
-#search::before {
-    content: "";
-    position: absolute;
-    top: 12px;
-    left: 17px;
 
-    width: 17px;
-    height: 17px;
-
+.search-icon {
     background-image: url(/svg/icon-search.svg);
     background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.3;
+    background-position: 17px 12px;
 }
 
 .top-nav-bar {
@@ -1110,8 +1101,7 @@ header {
 }
 
 .modal-write-us {
-    position: relative;
-    bottom: 660px;
+    bottom: 30px;
     left: 50%;
     margin-left: -310px;
     width: 460px;
@@ -1121,6 +1111,20 @@ header {
     border-top: 7px solid red;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }
+
+.modal p {
+    margin: 0;
+    padding: 0;
+}
+
+.top-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 460px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
 .modal-write-us fieldset {
     font-family: "Cuprum", 'Arial', sans-serif;
     font-size: 18px;
@@ -1128,10 +1132,26 @@ header {
     padding: 0px;
     margin: 0px;
     border: none;
+    width: 460px;
 }
 
-.modal-name label {
+.top-form label,
+.bottom-form label {
+    display: inline-block;
     margin-bottom: 10px;
+}
+
+.modal .bottom-form {
+    margin-bottom: 35px;
+}
+
+.write-us-form input[type="text"],
+.write-us-form input[type="email"] {
+    font: inherit;
+    box-sizing: border-box;
+    width: 220px;
+    padding: 7px 0px;
+    padding-left: 16px;
 }
 
 .write-us-form input::placeholder,
@@ -1156,28 +1176,32 @@ header {
     outline: 2px solid red ;
 }
 
-.write-us-form input {
-    width: 220px;
-    height: 38px;
-}
 .bottom-form textarea {
+    font: inherit;
+    box-sizing: border-box;
+    padding: 7px 0px;
+    padding-left: 16px;
     width: 460px;
     height: 114px;
     resize: none;
 }
 
-.modal-submit {
-/*     width: 620px;
-    height: 112px; */
-    background-color: #f4f4f4;
-/*     display: flex;
-    justify-content: center;
-    align-items: center; */
+.modal .modal-submit {
+    padding: 36px 0px;
 }
-/* .modal-submit button {
-    width: 460px;
-    height: 38px;    
-} */
+.modal-submit button {
+    padding: 10px 198px;
+}
+
+.modal-css-decoration {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    background-color: #f4f4f4;
+    height: 112px;
+    width: 620px;
+}
 
 .modal-close {
     position: absolute;
@@ -1193,6 +1217,7 @@ header {
     background-position: center;
     border: none;
     background-color: transparent;
+    outline: none;
 }
 
 .modal-map {
