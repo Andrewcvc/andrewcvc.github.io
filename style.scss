@@ -1174,6 +1174,7 @@ header {
 .write-us-form input:focus,
 .bottom-form textarea:focus {
     outline: 2px solid red ;
+    border: none;
 }
 
 .bottom-form textarea {
