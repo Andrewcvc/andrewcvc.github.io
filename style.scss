@@ -1104,9 +1104,19 @@ header {
     border-radius: 50%;
 }
 
+.modal {
+    position: fixed;
+    background-color: #ffffff;
+}
+
 .modal-write-us {
-    width: 620px;
-    height: 430px;
+    position: relative;
+    bottom: 660px;
+    left: 50%;
+    margin-left: -310px;
+    width: 460px;
+    padding: 0px 80px;
+    padding-top: 45px;
     margin-bottom: 50px;
     border-top: 7px solid red;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
@@ -1118,8 +1128,10 @@ header {
     padding: 0px;
     margin: 0px;
     border: none;
-    width: 620px;
-    height: 430px;
+}
+
+.modal-name label {
+    margin-bottom: 10px;
 }
 
 .write-us-form input::placeholder,
@@ -1168,9 +1180,14 @@ header {
 } */
 
 .modal-close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+
     width: 21px;
     height: 21px;
-    color: transparent;
+    font-size: 0px;
+    cursor: pointer;
     background-image: url(/svg/form-2.svg);
     background-repeat: no-repeat;
     background-position: center;
