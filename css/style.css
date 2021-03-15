@@ -418,7 +418,8 @@ header {
   background-color: #293449;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.site-navigation-current a:not([href]) {
   color: #a1a4a8;
   background-color: #1d2739;
 }
