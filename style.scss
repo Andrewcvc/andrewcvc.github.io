@@ -388,8 +388,7 @@ header {
     background-color: #293449;
 }
 
-.site-navigation a:active,
-.site-navigation-current a:not([href]) {
+.site-navigation a:active {
     color: #a1a4a8;
     background-color: #1d2739;
 }
@@ -724,10 +723,96 @@ header {
     background-position: center;
 }
 
+.item-popular-hover {
+    display: none;
+}
+
+.item-popular:hover .item-popular-active {
+    display: none;
+}
+
+.item-popular:hover .item-popular-hover {
+    display: block;
+}
+
 .item-popular:hover,
 .item-popular:focus {
     border: none;
     box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.buy.button {
+    position: relative;
+    background-color: #63a63e;
+    box-shadow: 0px 3px 0px #367315;
+    margin-bottom: 7px;
+    margin-top: 44px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    border: none;
+}
+
+.buy.button::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 12px;
+    top: 12px;
+    background-image: url(/svg/icon-cart.svg);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.buy.button:hover,
+.buy.button:focus,
+.buy.button:hover::before,
+.buy.button:focus::before {
+    background-color: #5fbb2d;
+    opacity: 1;
+    outline: none;
+}
+
+.buy.button:active,
+.buy.button:active::before {
+    background-color: #518534;
+    opacity: 1;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.bookmarks.button {
+    color: #32425c;
+    background-color: transparent;
+    border: 3px solid #63a63e;
+    padding: 7px 32px;
+    margin-bottom: 46px;
+}
+
+.bookmarks.button:hover,
+.bookmarks.button:focus {
+    border: 3px solid #32425c;
+}
+
+.bookmarks.button:active {
+    opacity: 0.3;
+}
+
+.item-popular {
+    position: relative;
+}
+
+.popular-items-list li:last-child::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 0px;
+    right: 0px;
+    background-image: url(/img/new.png);
+    background-repeat: no-repeat;
+    background-position: 0 0; 
 }
 
 .popular-companies-list {
