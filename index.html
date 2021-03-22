@@ -407,7 +407,7 @@
                     заехав в наш офис:</p>
                 <p><img src="./img/minimap.png" width="300" height="158"
                         alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Телефон:+7 (812) 555-05-55"></p>
-                <button class="button map-button" type="button">Заблудились? Напишите нам</button>
+                <button class="button write-us-button" type="button">Заблудились? Напишите нам</button>
             </section>
         </div>
     </main>
@@ -504,6 +504,18 @@
             <button class="modal-close" type="button" aria-label="Закрыть окно карты">x</button>
         </section>
     </div>
+
+    <script>
+        var writeUs = document.querySelector(".write-us-button");
+        var popup = document.querySelector(".modal-write-us");
+
+        writeUs.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+        });
+        
+
+    </script>
 </body>
 
 </html>

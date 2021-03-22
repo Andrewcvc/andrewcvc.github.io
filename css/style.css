@@ -1524,6 +1524,10 @@ header {
   margin-left: -470px;
 }
 
+.modal-show {
+  display: block;
+}
+
 /* КАТАЛОГ */
 .catalog-page {
   margin: 0;
