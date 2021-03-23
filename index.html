@@ -469,6 +469,7 @@
         </div>
     </footer>
 
+
     <section class="modal modal-write-us">
         <button class="modal-close" value="close" aria-label="Закрыть окно Обратной связи">Закрыть</button>
         <fieldset class="write-us-form">
@@ -508,12 +509,23 @@
     <script>
         var writeUs = document.querySelector(".write-us-button");
         var popup = document.querySelector(".modal-write-us");
+        var close = document.querySelector(".modal-close");
+        var overlay = document.querySelector(".overlay");
 
         writeUs.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.add("modal-show");
+            
         });
         
+        close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+        });
+
+        /* overlay.addEventListener("click", function() {
+            overlay.classList.remove("modal-show");
+        }) */
 
     </script>
 </body>

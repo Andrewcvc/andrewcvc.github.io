@@ -1352,6 +1352,7 @@ header {
   position: fixed;
   background-color: #ffffff;
   display: none;
+  z-index: 1;
 }
 
 .modal-write-us {
@@ -1522,6 +1523,20 @@ header {
           box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.25);
   margin-top: -223px;
   margin-left: -470px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
 }
 
 .modal-show {
