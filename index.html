@@ -405,8 +405,8 @@
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами,<br>
                     заехав в наш офис:</p>
-                <p><img src="./img/minimap.png" width="300" height="158"
-                        alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Телефон:+7 (812) 555-05-55"></p>
+                <p><a class="contacts-button-map" href="map.html"><img src="./img/minimap.png" width="300" height="158"
+                        alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Телефон:+7 (812) 555-05-55"></a></p>
                 <button class="button write-us-button" type="button">Заблудились? Напишите нам</button>
             </section>
         </div>
@@ -499,40 +499,16 @@
     <div class="modal modal-map">
         <section>
             <h2 class="visually-hidden">Как до нас добраться</h2>
-            <a href="yandex.map.ru"><img src="./img/modalmap.png"
-                    alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Телефон:+7 (812) 555-05-55"></a>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.608497634846!2d30.323523180931595!3d59.93863832563593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1616795853853!5m2!1suk!2sua" width="940" height="446" loading="lazy"></iframe>
+
+            <p><img src="./img/modalmap.png"
+                    alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 Телефон:+7 (812) 555-05-55" width="940" height="446"></p>
             <button class="modal-close" type="button" aria-label="Закрыть окно карты">x</button>
         </section>
     </div>
 
-    <script>
-        var writeUs = document.querySelector(".write-us-button");
-        var popup = document.querySelector(".modal-write-us");
-        var close = document.querySelector(".modal-close");
-        var overlay = document.querySelector(".overlay");
-        var firstname = popup.querySelector("[name=name]");
-        var email = popup.querySelector("[name=email]");
-        var form = popup.querySelector("form");
-
-        writeUs.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-            firstname.focus();
-        });
-        
-        close.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-        });
-
-        form.addEventListener("submit", function (evt) {
-            if (!firstname.value || !email.value) {
-            evt.preventDefault();
-            console.log("Нужно ввести Имя и Почту");
-            }
-        });
-
-    </script>
+    <script src="popup.js"></script>
 </body>
 
 </html>
