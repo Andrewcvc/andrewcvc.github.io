@@ -79,3 +79,78 @@ window.addEventListener("keydown", function (evt) {
         }
     }
 });
+
+
+/* Практика по книжці */
+
+var age = 11;
+var accompined = true;
+var cinemaAge = 12;
+var visitCinema = age >= cinemaAge || accompined;
+
+var furryAnimals = ["cat", "dog", "mouse"];
+var scalyAnimals = ["dragon", "KingKong"];
+var allAnimals = furryAnimals.concat(scalyAnimals);
+var randomWords = ["петя", "вася", "коля", "зіна", "зоя"];
+var randomWord = randomWords[Math.floor(Math.random() * 4)];
+
+for(var i = 1; i < 100; i++)
+{
+randomWords = ["петя", "вася", "коля", "зіна", "зоя"];
+randomWord = randomWords[Math.floor(Math.random() * 4)];
+/* console.log(randomWord) */
+}
+
+var cat = {
+    "lenght": 3,
+    "name": "Sara",
+    "color": "green"
+};
+
+var dog = {};
+dog.color = "black";
+dog.legs = 4;
+dog.ears = 2;
+dog.bark = "gau gau";
+
+var dogs = [
+    { name: "zeus", color: "blue", luckyNumbers: [2, 3, 4, 5] },
+    { name: "Klara", color: "pink" }
+];
+
+var movies = {
+    "Cars": {
+        duration: 100,
+        format: "DVD",
+        releaseDate: 2003
+    },
+    "Sumerki 2": {
+        duration: 120,
+        format: "DVD",
+        releaseDate: 2012
+    }
+};
+
+var vikings = {
+    duration: 150,
+    format: "BluRay",
+    releaseDate: 2015
+};
+
+movies["Vikings"] = vikings;
+
+var scores = {
+    "Petya": 0,
+    "Vasya": 2,
+    "Andriy": 10,
+    "Tanya": 12
+};
+scores.Tanya += 5;
+scores["Vasya"] += 10;
+scores.Petya += 5;
+
+var myCrazyObject = {
+    "name": "Нелепый объект",
+    "some array": [7, 9, { purpose: "putanina", numbers: 123 }, 3.3],
+    "random animal": "banana shark"
+};
