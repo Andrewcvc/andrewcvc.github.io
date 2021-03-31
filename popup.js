@@ -181,9 +181,68 @@ if (lemonChicken) {
     console.log("You don't have anything, I'll go to another restaurant!!!");
 };
 
-var myName = "Andrew";
-var someoneName = "Who knows";
+var Name = "Vasya";
 var dadName = "Valera";
-var motherName = "Tanya";
+var motherName = "Zina";
 
-if (myName === someoneName)
+if (Name === "Andrew") {
+    console.log("Hi to me!");
+} else {
+    console.log("Hi, someone");
+};
+if (dadName === "Valera") {
+    console.log("Hi, dad!");
+} else {
+    console.log("Hi, someone");
+};
+if (motherName === "Tanya") {
+    console.log("Hi, mom!");
+} else {
+    console.log("Hi, madam!");
+};
+
+//цикли
+var sheepCount = 0;
+while (sheepCount < 10) {
+    console.log("Counted sheeps: " + sheepCount + "!");
+    sheepCount++;
+};
+console.log("end counting");
+
+var timeToSayHello = 3;
+for (var i = 0; i < timeToSayHello; i++) {
+    console.log("Hi!");
+};
+
+var zooAnimals = ["lion", "tiger", "wolf", "wild cat"];
+for (var i = 0; i < zooAnimals.length; i++) {
+    console.log("In our zoo we have: " + zooAnimals[i] + ".");
+};
+
+for (var x = 3; x < 10000; x = x * 3) {
+    console.log(x);
+};
+
+var randomAnimals = ["cat", "fish", "lemur", "varan"];
+for (var i = 0; i < randomAnimals.length; i++) {
+    randomAnimals[i] = randomAnimals[i] + " - fantastic animal";
+    console.log(randomAnimals[i]);
+};
+
+//хз як це зробити
+var alphabet = "абвгдеёжзийклмнопрстуфчцчшщъыьэюя";
+var randomString = "";
+
+while (randomString.length < 6) {
+    var a = Math.floor(Math.random() * alphabet.length);
+    randomString += alphabet[a];
+    console.log(randomString);
+};
+
+var input = "javascript is awesome";
+var output = "";
+
+for (var b = 0; b < input.length; output += input[b]) {
+    b++;
+    console.log(output);
+};
