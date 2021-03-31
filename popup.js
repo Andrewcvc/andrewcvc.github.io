@@ -101,6 +101,8 @@ randomWord = randomWords[Math.floor(Math.random() * 4)];
 /* console.log(randomWord) */
 }
 
+//об'єкти
+
 var cat = {
     "lenght": 3,
     "name": "Sara",
@@ -154,3 +156,34 @@ var myCrazyObject = {
     "some array": [7, 9, { purpose: "putanina", numbers: 123 }, 3.3],
     "random animal": "banana shark"
 };
+
+// условия
+
+var mouseName = "Zinaida";
+console.log("Hi, " + mouseName);
+if (mouseName.length > 6) {
+    console.log("What a long name!");
+} else {
+    console.log("What a small name!")
+};
+
+var lemonChicken = false;
+var beefWithBlackBeen = false;
+var sweetAndSourPork = false;
+
+if (lemonChicken) {
+    console.log("Nice, I want to eat chicken with lemon");
+} else if (beefWithBlackBeen) {
+    console.log("I'll eat beef!");
+} else if (sweetAndSourPork) {
+    console.log("Okay, give me pork!");
+} else {
+    console.log("You don't have anything, I'll go to another restaurant!!!");
+};
+
+var myName = "Andrew";
+var someoneName = "Who knows";
+var dadName = "Valera";
+var motherName = "Tanya";
+
+if (myName === someoneName)
