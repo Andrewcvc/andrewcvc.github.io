@@ -94,11 +94,10 @@ var allAnimals = furryAnimals.concat(scalyAnimals);
 var randomWords = ["петя", "вася", "коля", "зіна", "зоя"];
 var randomWord = randomWords[Math.floor(Math.random() * 4)];
 
-for(var i = 1; i < 100; i++)
-{
-randomWords = ["петя", "вася", "коля", "зіна", "зоя"];
-randomWord = randomWords[Math.floor(Math.random() * 4)];
-/* console.log(randomWord) */
+for (var i = 1; i < 100; i++) {
+    randomWords = ["петя", "вася", "коля", "зіна", "зоя"];
+    randomWord = randomWords[Math.floor(Math.random() * 4)];
+    /* console.log(randomWord) */
 }
 
 //об'єкти
@@ -223,26 +222,42 @@ for (var x = 3; x < 10000; x = x * 3) {
     console.log(x);
 };
 
-var randomAnimals = ["cat", "fish", "lemur", "varan"];
+/* var randomAnimals = ["cat", "fish", "lemur", "varan"];
 for (var i = 0; i < randomAnimals.length; i++) {
     randomAnimals[i] = randomAnimals[i] + " - fantastic animal";
     console.log(randomAnimals[i]);
-};
+}; */
 
 //хз як це зробити
-var alphabet = "абвгдеёжзийклмнопрстуфчцчшщъыьэюя";
+/* var alphabet = "абвгдеёжзийклмнопрстуфчцчшщъыьэюя";
 var randomString = "";
 
 while (randomString.length < 6) {
     var a = Math.floor(Math.random() * alphabet.length);
     randomString += alphabet[a];
     console.log(randomString);
-};
+}; */
 
-var input = "javascript is awesome";
+var input = "javascript is awesome ";
 var output = "";
+var i = -1;
 
-for (var b = 0; b < input.length; output += input[b]) {
-    b++;
+/* for (var i = 0; i <= input.lenght; i++) {
+    input[1] = "4";
+    input[3] = "4";
+    input[7] = "1";
+    input[11] = "1";
+    input[14] = "4";
+    input[16] = "3";
+    input[18] = "0";
+    input[20] = "3";
+    output += input[i];
+    console.log(output);
+};
+console.log(output); */
+
+for (var output = ""; output.length < input.length; output += input[i]) {
+    input[1] = "4";
+    i++;
     console.log(output);
 };
