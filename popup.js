@@ -222,42 +222,38 @@ for (var x = 3; x < 10000; x = x * 3) {
     console.log(x);
 };
 
-/* var randomAnimals = ["cat", "fish", "lemur", "varan"];
+
+var randomAnimals = ["cat", "fish", "lemur", "varan"];
 for (var i = 0; i < randomAnimals.length; i++) {
     randomAnimals[i] = randomAnimals[i] + " - fantastic animal";
     console.log(randomAnimals[i]);
-}; */
+};
 
 //хз як це зробити
-/* var alphabet = "абвгдеёжзийклмнопрстуфчцчшщъыьэюя";
+var alphabet = "абвгдеёжзийклмнопрстуфчцчшщъыьэюя";
 var randomString = "";
 
 while (randomString.length < 6) {
     var a = Math.floor(Math.random() * alphabet.length);
     randomString += alphabet[a];
     console.log(randomString);
-}; */
+};
 
 var input = "javascript is awesome ";
 var output = "";
-var i = -1;
 
-/* for (var i = 0; i <= input.lenght; i++) {
-    input[1] = "4";
-    input[3] = "4";
-    input[7] = "1";
-    input[11] = "1";
-    input[14] = "4";
-    input[16] = "3";
-    input[18] = "0";
-    input[20] = "3";
-    output += input[i];
-    console.log(output);
+for (var i = 0; i < input.length; i++) {
+    if (input[i] === "a") {
+        output += "4";
+    } else if (input[i] === "e") {
+        output += "3";
+    } else if (input[i] === "i") {
+        output += "1";
+    } else if (input[i] === "o") {
+        output += "0";
+    } else {
+        output += input[i];
+    }
 };
-console.log(output); */
 
-for (var output = ""; output.length < input.length; output += input[i]) {
-    input[1] = "4";
-    i++;
-    console.log(output);
-};
+console.log(output);
