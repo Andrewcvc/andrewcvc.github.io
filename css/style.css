@@ -1324,19 +1324,19 @@ header {
 }
 
 .footer-social-list li:nth-child(1) a {
-  background-image: url(svg/icon-vk.svg);
+  background-image: url(/svg/icon-vk.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .footer-social-list li:nth-child(2) a {
-  background-image: url(svg/icon-fb.svg);
+  background-image: url(/svg/icon-fb.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .footer-social-list li:nth-child(3) a {
-  background-image: url(svg/icon-insta.svg);
+  background-image: url(/svg/icon-insta.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
